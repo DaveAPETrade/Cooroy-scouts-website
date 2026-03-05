@@ -45,7 +45,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **INFR-01**: Site is responsive across mobile, tablet, and desktop
 - [x] **INFR-02**: Site uses Scouts Queensland branding with unique Cooroy identity
-- [ ] **INFR-03**: Site deployed on Cloudflare Pages with CI/CD from GitHub
+- [x] **INFR-03**: Site deployed on Cloudflare Pages with CI/CD from GitHub
 - [ ] **INFR-04**: Sveltia CMS integrated with GitHub OAuth for volunteer editing
 
 ## v2 Requirements
@@ -106,7 +106,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | GALL-02 | Phase 3 | Pending |
 | INFR-01 | Phase 1 | Complete |
 | INFR-02 | Phase 1 | Complete |
-| INFR-03 | Phase 1 | Pending |
+| INFR-03 | Phase 1 | Complete |
 | INFR-04 | Phase 4 | Pending |
 
 **Coverage:**
