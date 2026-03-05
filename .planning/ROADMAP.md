@@ -44,7 +44,12 @@ Plans:
   3. The section pages include an overview showing the age progression pathway from Joeys through to Venturers
   4. A parent can submit the contact form with their name, child's age, and email — the submission arrives in the group's email inbox with spam protection active
   5. The events/term program page displays at least one real term entry (not placeholder content)
-**Plans**: TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Update brand tokens (green to blue/navy) and migrate homepage with section-colored cards
+- [ ] 02-02-PLAN.md — Create SectionProgression component and 4 individual section pages
+- [ ] 02-03-PLAN.md — Create About, Events, and Contact/Join pages with Web3Forms
 
 ### Phase 3: Gallery
 **Goal**: A photo gallery shows the group as active and welcoming, with all images served as optimised WebP — and the image pipeline is configured correctly from the start so no re-migration is needed later
@@ -74,6 +79,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 1/2 | In Progress|  |
-| 2. Content Pages | 0/TBD | Not started | - |
+| 2. Content Pages | 0/3 | Not started | - |
 | 3. Gallery | 0/TBD | Not started | - |
 | 4. CMS Integration | 0/TBD | Not started | - |
