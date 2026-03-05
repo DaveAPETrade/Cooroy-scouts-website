@@ -14,12 +14,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Sections
 
-- [ ] **SECT-01**: User can view Joeys page with age range (5-7), meeting time/location, and brief description
-- [ ] **SECT-02**: User can view Cubs page with age range (8-10), meeting time/location, and brief description
-- [ ] **SECT-03**: User can view Scouts page with age range (11-14), meeting time/location, and brief description
-- [ ] **SECT-04**: User can view Venturers page with age range (15-17), meeting time/location, and brief description
-- [ ] **SECT-05**: Each section page shows activity previews (what a typical night looks like)
-- [ ] **SECT-06**: User can see age progression pathway (Joeys → Cubs → Scouts → Venturers) overview
+- [x] **SECT-01**: User can view Joeys page with age range (5-7), meeting time/location, and brief description
+- [x] **SECT-02**: User can view Cubs page with age range (8-10), meeting time/location, and brief description
+- [x] **SECT-03**: User can view Scouts page with age range (11-14), meeting time/location, and brief description
+- [x] **SECT-04**: User can view Venturers page with age range (15-17), meeting time/location, and brief description
+- [x] **SECT-05**: Each section page shows activity previews (what a typical night looks like)
+- [x] **SECT-06**: User can see age progression pathway (Joeys → Cubs → Scouts → Venturers) overview
 
 ### About
 
@@ -90,12 +90,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | HOME-01 | Phase 2 | Complete |
 | HOME-02 | Phase 2 | Complete |
-| SECT-01 | Phase 2 | Pending |
-| SECT-02 | Phase 2 | Pending |
-| SECT-03 | Phase 2 | Pending |
-| SECT-04 | Phase 2 | Pending |
-| SECT-05 | Phase 2 | Pending |
-| SECT-06 | Phase 2 | Pending |
+| SECT-01 | Phase 2 | Complete |
+| SECT-02 | Phase 2 | Complete |
+| SECT-03 | Phase 2 | Complete |
+| SECT-04 | Phase 2 | Complete |
+| SECT-05 | Phase 2 | Complete |
+| SECT-06 | Phase 2 | Complete |
 | ABUT-01 | Phase 2 | Complete |
 | EVNT-01 | Phase 2 | Complete |
 | EVNT-02 | Phase 4 | Pending |
