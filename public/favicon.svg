@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Scout fleur-de-lis silhouette in Scouts Australia green (#077840) -->
-  <g fill="#077840">
+  <!-- Scout fleur-de-lis silhouette in Scouts QLD Maroon (#681d34) -->
+  <g fill="#681d34">
     <!-- Centre petal (top point) -->
     <path d="M32 4 C28 10 24 18 26 26 C28 30 32 32 32 32 C32 32 36 30 38 26 C40 18 36 10 32 4Z"/>
     <!-- Left petal -->

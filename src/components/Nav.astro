@@ -8,12 +8,12 @@ const navLinks = [
 ];
 ---
 
-<header class="bg-scout-green text-white sticky top-0 z-50 shadow-md">
+<header class="bg-scout-maroon text-white sticky top-0 z-50 shadow-md">
   <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
 
-    <!-- Wordmark — text only (logo usage requires permission from Scouts QLD) -->
-    <a href="/" class="font-display font-black text-xl text-white tracking-tight hover:text-scout-gold transition-colors">
-      Cooroy Scouts
+    <!-- Official Scouts QLD white logo -->
+    <a href="/" aria-label="Cooroy Scouts — Home">
+      <img src="/logos/scouts-qld-white.png" alt="Scouts Queensland" class="h-10 w-auto" />
     </a>
 
     <!-- Desktop nav links (md and above) -->
@@ -28,7 +28,7 @@ const navLinks = [
       <li>
         <a
           href="/join"
-          class="bg-scout-gold text-scout-green-dark font-bold px-5 py-2 rounded-full hover:bg-scout-gold-dark transition-colors"
+          class="bg-scout-gold text-scout-navy font-bold px-5 py-2 rounded-full hover:bg-scout-gold-dark transition-colors"
         >
           Join Us
         </a>
@@ -52,7 +52,7 @@ const navLinks = [
   <!-- Mobile dropdown menu -->
   <div
     id="mobile-menu"
-    class="md:hidden hidden bg-scout-green-dark px-4 pb-4 border-t border-white/10"
+    class="md:hidden hidden bg-scout-maroon-dark px-4 pb-4 border-t border-white/10"
   >
     <ul class="flex flex-col gap-1 pt-2 font-semibold text-sm">
       {navLinks.map(link => (
@@ -68,7 +68,7 @@ const navLinks = [
       <li class="mt-2">
         <a
           href="/join"
-          class="block bg-scout-gold text-scout-green-dark font-bold px-4 py-3 rounded-full text-center hover:bg-scout-gold-dark transition-colors"
+          class="block bg-scout-gold text-scout-navy font-bold px-4 py-3 rounded-full text-center hover:bg-scout-gold-dark transition-colors"
         >
           Join Us
         </a>
