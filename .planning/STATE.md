@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-foundation/01-02-PLAN.md
-last_updated: "2026-03-05T11:16:28.753Z"
+stopped_at: Completed 02-content-pages/02-01-PLAN.md
+last_updated: "2026-03-05T11:32:10.344Z"
 last_activity: 2026-03-05 — Roadmap created, Phase 1 ready for planning
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 5
-  completed_plans: 2
+  completed_plans: 3
   percent: 0
 ---
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01-foundation P01 | 5 | 2 tasks | 9 files |
 | Phase 01-foundation P02 | 20 | 3 tasks | 3 files |
+| Phase 02-content-pages P01 | 3 | 3 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: Brand colors #077840 (green) and #F0CB37 (gold) used as community-consensus placeholders — pending official Scouts QLD brand kit PDF verification
 - [Phase 01-foundation]: Deployed via Cloudflare Workers (workers.dev URL) not Cloudflare Pages (pages.dev) — user chose Workers deployment path; functionally equivalent for CI/CD purposes
 - [Phase 01-foundation]: package-lock.json committed to repo — required for reproducible npm ci installs on Cloudflare build servers
+- [Phase 02-content-pages]: scout-maroon (#681d34) replaces scout-green as primary brand token; scout-navy (#28265c) used for footer and CTA text on gold
+- [Phase 02-content-pages]: Section colors use section- prefix (bg-section-joeys etc.) to distinguish from primary brand tokens
+- [Phase 02-content-pages]: Nunito Sans replaces Montserrat+Nunito as per Scouts Australia Brand Book; official scouts-qld-white.png logo used in Nav
 
 ### Pending Todos
 
@@ -83,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-05T11:16:28.750Z
-Stopped at: Completed 01-foundation/01-02-PLAN.md
+Last session: 2026-03-05T11:32:10.341Z
+Stopped at: Completed 02-content-pages/02-01-PLAN.md
 Resume file: None

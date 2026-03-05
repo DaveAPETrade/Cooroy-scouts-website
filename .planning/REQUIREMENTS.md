@@ -9,8 +9,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage
 
-- [ ] **HOME-01**: User sees hero section with group intro and prominent "Join Us" CTA
-- [ ] **HOME-02**: User sees overview of available sections with links to section pages
+- [x] **HOME-01**: User sees hero section with group intro and prominent "Join Us" CTA
+- [x] **HOME-02**: User sees overview of available sections with links to section pages
 
 ### Sections
 
@@ -88,8 +88,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| HOME-01 | Phase 2 | Pending |
-| HOME-02 | Phase 2 | Pending |
+| HOME-01 | Phase 2 | Complete |
+| HOME-02 | Phase 2 | Complete |
 | SECT-01 | Phase 2 | Pending |
 | SECT-02 | Phase 2 | Pending |
 | SECT-03 | Phase 2 | Pending |
