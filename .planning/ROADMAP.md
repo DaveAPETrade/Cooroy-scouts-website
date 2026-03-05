@@ -28,7 +28,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. A push to the GitHub main branch triggers an automatic Cloudflare Pages rebuild (CI/CD is active)
   3. The site renders correctly on mobile, tablet, and desktop (responsive BaseLayout with Nav and Footer)
   4. Scouts QLD brand colours and typography are applied from approved official assets, not eyedropper samples
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Astro project with Tailwind v4, brand design tokens, and responsive BaseLayout (Nav + Footer)
+- [ ] 01-02-PLAN.md — Deploy to Cloudflare Pages with CI/CD from GitHub
 
 ### Phase 2: Content Pages
 **Goal**: Every public-facing informational page exists with real content — parents can find the right section for their child's age, read about the group, and submit a contact inquiry
@@ -69,7 +73,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/2 | Planning complete | - |
 | 2. Content Pages | 0/TBD | Not started | - |
 | 3. Gallery | 0/TBD | Not started | - |
 | 4. CMS Integration | 0/TBD | Not started | - |
