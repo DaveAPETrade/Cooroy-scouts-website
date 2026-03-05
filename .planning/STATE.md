@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 02-content-pages/02-01-PLAN.md
-last_updated: "2026-03-05T11:32:10.344Z"
+stopped_at: Completed 02-content-pages/02-02-PLAN.md
+last_updated: "2026-03-05T11:37:22.420Z"
 last_activity: 2026-03-05 — Roadmap created, Phase 1 ready for planning
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 3
+  completed_plans: 5
   percent: 0
 ---
 
@@ -53,6 +53,8 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-foundation P01 | 5 | 2 tasks | 9 files |
 | Phase 01-foundation P02 | 20 | 3 tasks | 3 files |
 | Phase 02-content-pages P01 | 3 | 3 tasks | 5 files |
+| Phase 02-content-pages P03 | 2 | 2 tasks | 3 files |
+| Phase 02-content-pages P02 | 2 | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -73,6 +75,11 @@ Recent decisions affecting current work:
 - [Phase 02-content-pages]: scout-maroon (#681d34) replaces scout-green as primary brand token; scout-navy (#28265c) used for footer and CTA text on gold
 - [Phase 02-content-pages]: Section colors use section- prefix (bg-section-joeys etc.) to distinguish from primary brand tokens
 - [Phase 02-content-pages]: Nunito Sans replaces Montserrat+Nunito as per Scouts Australia Brand Book; official scouts-qld-white.png logo used in Nav
+- [Phase 02-content-pages]: termProgram uses sections (string) not section (enum) — allows 'All sections' and multi-section values, maps cleanly to Phase 4 CMS text field
+- [Phase 02-content-pages]: Join form uses fetch POST not native form POST — enables inline success/error state without page navigation
+- [Phase 02-content-pages]: Web3Forms access_key intentionally left as placeholder — requires group leader user_setup before form sends emails
+- [Phase 02-content-pages]: Individual section pages (not dynamic [section].astro) — content is unique per section and editors should update pages independently
+- [Phase 02-content-pages]: Meeting times use placeholder text pending group leader input — known blocker documented in STATE.md
 
 ### Pending Todos
 
@@ -87,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-05T11:32:10.341Z
-Stopped at: Completed 02-content-pages/02-01-PLAN.md
+Last session: 2026-03-05T11:37:17.093Z
+Stopped at: Completed 02-content-pages/02-02-PLAN.md
 Resume file: None

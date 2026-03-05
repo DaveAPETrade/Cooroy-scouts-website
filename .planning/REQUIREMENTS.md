@@ -23,18 +23,18 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### About
 
-- [ ] **ABUT-01**: User can view About/History page with group background and scouting info
+- [x] **ABUT-01**: User can view About/History page with group background and scouting info
 
 ### Events
 
-- [ ] **EVNT-01**: User can view current term program/activities on events page
+- [x] **EVNT-01**: User can view current term program/activities on events page
 - [ ] **EVNT-02**: Volunteer editor can update term program content via browser-based CMS
 
 ### Contact
 
-- [ ] **CONT-01**: User can submit inquiry via contact/join us form (name, child's age, email)
-- [ ] **CONT-02**: Form submissions forwarded to group email via Web3Forms
-- [ ] **CONT-03**: Form includes spam protection (Cloudflare Turnstile or hCaptcha)
+- [x] **CONT-01**: User can submit inquiry via contact/join us form (name, child's age, email)
+- [x] **CONT-02**: Form submissions forwarded to group email via Web3Forms
+- [x] **CONT-03**: Form includes spam protection (Cloudflare Turnstile or hCaptcha)
 
 ### Gallery
 
@@ -96,12 +96,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SECT-04 | Phase 2 | Pending |
 | SECT-05 | Phase 2 | Pending |
 | SECT-06 | Phase 2 | Pending |
-| ABUT-01 | Phase 2 | Pending |
-| EVNT-01 | Phase 2 | Pending |
+| ABUT-01 | Phase 2 | Complete |
+| EVNT-01 | Phase 2 | Complete |
 | EVNT-02 | Phase 4 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
 | GALL-01 | Phase 3 | Pending |
 | GALL-02 | Phase 3 | Pending |
 | INFR-01 | Phase 1 | Complete |

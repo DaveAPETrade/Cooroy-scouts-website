@@ -13,7 +13,7 @@ Four phases take this from an empty repo to a live, volunteer-maintainable site.
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Astro project, Tailwind v4 design system, Cloudflare Pages deployment, BaseLayout (completed 2026-03-05)
-- [ ] **Phase 2: Content Pages** - All public pages: homepage, about, sections, contact, events
+- [x] **Phase 2: Content Pages** - All public pages: homepage, about, sections, contact, events (completed 2026-03-05)
 - [ ] **Phase 3: Gallery** - Photo gallery with Astro image optimisation pipeline
 - [ ] **Phase 4: CMS Integration** - Sveltia CMS at /admin with volunteer-accessible term program editing
 
@@ -44,7 +44,7 @@ Plans:
   3. The section pages include an overview showing the age progression pathway from Joeys through to Venturers
   4. A parent can submit the contact form with their name, child's age, and email — the submission arrives in the group's email inbox with spam protection active
   5. The events/term program page displays at least one real term entry (not placeholder content)
-**Plans:** 1/3 plans executed
+**Plans:** 3/3 plans complete
 
 Plans:
 - [ ] 02-01-PLAN.md — Update brand tokens (green to blue/navy) and migrate homepage with section-colored cards
@@ -79,6 +79,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete   | 2026-03-05 |
-| 2. Content Pages | 1/3 | In Progress|  |
+| 2. Content Pages | 3/3 | Complete   | 2026-03-05 |
 | 3. Gallery | 0/TBD | Not started | - |
 | 4. CMS Integration | 0/TBD | Not started | - |
