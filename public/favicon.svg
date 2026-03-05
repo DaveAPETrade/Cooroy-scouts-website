@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Scout fleur-de-lis silhouette in Scouts Australia green (#077840) -->
+  <g fill="#077840">
+    <!-- Centre petal (top point) -->
+    <path d="M32 4 C28 10 24 18 26 26 C28 30 32 32 32 32 C32 32 36 30 38 26 C40 18 36 10 32 4Z"/>
+    <!-- Left petal -->
+    <path d="M16 20 C10 22 6 28 8 34 C10 38 16 40 20 38 C22 36 22 32 22 30 C22 24 20 20 16 20Z"/>
+    <!-- Right petal -->
+    <path d="M48 20 C44 20 42 24 42 30 C42 32 42 36 44 38 C48 40 54 38 56 34 C58 28 54 22 48 20Z"/>
+    <!-- Body/base connecting piece -->
+    <path d="M22 30 C22 36 26 40 32 42 C38 40 42 36 42 30 C42 26 38 24 32 24 C26 24 22 26 22 30Z"/>
+    <!-- Horizontal bar -->
+    <rect x="20" y="42" width="24" height="4" rx="2"/>
+    <!-- Base triangle -->
+    <path d="M24 46 L32 58 L40 46Z"/>
+  </g>
+</svg>
