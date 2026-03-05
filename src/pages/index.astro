@@ -1,37 +1,40 @@
 ---
-// CI/CD verification — 2026-03-05
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const sections = [
   {
     name: 'Joeys',
-    age: '5–8 years',
-    color: 'bg-yellow-400',
-    textColor: 'text-yellow-900',
+    age: '5-7 years',
+    color: 'bg-section-joeys',
+    textColor: 'text-white',
+    href: '/sections/joeys',
     description: 'The youngest adventurers begin their journey with games, crafts, and community activities in a safe and fun environment.',
     icon: '🐨',
   },
   {
     name: 'Cubs',
-    age: '8–11 years',
-    color: 'bg-orange-400',
-    textColor: 'text-orange-900',
+    age: '8-10 years',
+    color: 'bg-section-cubs',
+    textColor: 'text-amber-900',
+    href: '/sections/cubs',
     description: 'Cubs explore nature, learn basic survival skills, work as a team, and complete challenges that build confidence and resilience.',
     icon: '🐻',
   },
   {
     name: 'Scouts',
-    age: '11–15 years',
-    color: 'bg-scout-green',
+    age: '11-14 years',
+    color: 'bg-section-scouts',
     textColor: 'text-white',
+    href: '/sections/scouts',
     description: 'The heart of Scouting — camping, hiking, navigation, leadership, and community service in the Noosa hinterland and beyond.',
     icon: '⛺',
   },
   {
     name: 'Venturers',
-    age: '15–18 years',
-    color: 'bg-scout-green-dark',
+    age: '15-17 years',
+    color: 'bg-section-venturers',
     textColor: 'text-white',
+    href: '/sections/venturers',
     description: 'Older youth take charge of their own program — expeditions, Duke of Edinburgh, community projects, and leadership development.',
     icon: '🏔️',
   },
@@ -41,7 +44,7 @@ const sections = [
 <BaseLayout title="Home">
 
   <!-- Hero section -->
-  <section class="bg-scout-green text-white">
+  <section class="bg-scout-maroon text-white">
     <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 text-center">
       <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
         Welcome to Cooroy Scouts
@@ -52,13 +55,13 @@ const sections = [
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
           href="/join"
-          class="bg-scout-gold text-scout-green-dark font-display font-bold text-base px-8 py-4 rounded-full hover:bg-scout-gold-dark transition-colors inline-block"
+          class="bg-scout-gold text-scout-navy font-display font-bold text-base px-8 py-4 rounded-full hover:bg-scout-gold-dark transition-colors inline-block"
         >
           Join Us Today
         </a>
         <a
           href="/sections"
-          class="border-2 border-white text-white font-display font-bold text-base px-8 py-4 rounded-full hover:bg-white hover:text-scout-green transition-colors inline-block"
+          class="border-2 border-white text-white font-display font-bold text-base px-8 py-4 rounded-full hover:bg-white hover:text-scout-maroon transition-colors inline-block"
         >
           Explore Sections
         </a>
@@ -69,7 +72,7 @@ const sections = [
   <!-- About / intro section -->
   <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-green mb-6 text-center">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-navy mb-6 text-center">
         What We Do
       </h2>
       <div class="prose prose-lg mx-auto text-gray-700 space-y-4 text-base leading-relaxed">
@@ -89,7 +92,7 @@ const sections = [
   <!-- Section cards grid -->
   <section class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-green mb-4 text-center">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-navy mb-4 text-center">
         Find Your Section
       </h2>
       <p class="text-center text-gray-600 mb-10 max-w-xl mx-auto">
@@ -107,8 +110,8 @@ const sections = [
             <div class="px-5 py-5">
               <p class="text-gray-600 text-sm leading-relaxed">{section.description}</p>
               <a
-                href="/sections"
-                class="mt-4 inline-block text-scout-green font-bold text-sm hover:text-scout-green-dark transition-colors"
+                href={section.href}
+                class="mt-4 inline-block text-scout-maroon font-bold text-sm hover:text-scout-maroon-dark transition-colors"
               >
                 Learn more &rarr;
               </a>
@@ -122,15 +125,15 @@ const sections = [
   <!-- Call to action banner -->
   <section class="py-16 bg-scout-gold">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-green-dark mb-4">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-navy mb-4">
         Ready to Join the Adventure?
       </h2>
-      <p class="text-scout-green-dark/80 text-lg mb-8 max-w-xl mx-auto">
+      <p class="text-scout-navy/80 text-lg mb-8 max-w-xl mx-auto">
         Registration is done through Scouts Queensland. Get in touch with us and we'll help your young person find the right section and get started.
       </p>
       <a
         href="/join"
-        class="bg-scout-green text-white font-display font-bold text-base px-8 py-4 rounded-full hover:bg-scout-green-dark transition-colors inline-block"
+        class="bg-scout-navy text-white font-display font-bold text-base px-8 py-4 rounded-full hover:bg-scout-navy-dark transition-colors inline-block"
       >
         How to Join
       </a>
