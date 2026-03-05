@@ -1,14 +1,139 @@
 ---
-// Placeholder — replaced in Task 2
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const sections = [
+  {
+    name: 'Joeys',
+    age: '5–8 years',
+    color: 'bg-yellow-400',
+    textColor: 'text-yellow-900',
+    description: 'The youngest adventurers begin their journey with games, crafts, and community activities in a safe and fun environment.',
+    icon: '🐨',
+  },
+  {
+    name: 'Cubs',
+    age: '8–11 years',
+    color: 'bg-orange-400',
+    textColor: 'text-orange-900',
+    description: 'Cubs explore nature, learn basic survival skills, work as a team, and complete challenges that build confidence and resilience.',
+    icon: '🐻',
+  },
+  {
+    name: 'Scouts',
+    age: '11–15 years',
+    color: 'bg-scout-green',
+    textColor: 'text-white',
+    description: 'The heart of Scouting — camping, hiking, navigation, leadership, and community service in the Noosa hinterland and beyond.',
+    icon: '⛺',
+  },
+  {
+    name: 'Venturers',
+    age: '15–18 years',
+    color: 'bg-scout-green-dark',
+    textColor: 'text-white',
+    description: 'Older youth take charge of their own program — expeditions, Duke of Edinburgh, community projects, and leadership development.',
+    icon: '🏔️',
+  },
+];
 ---
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cooroy Scouts</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  </head>
-  <body>
-    <h1>Cooroy Scouts</h1>
-  </body>
-</html>
+
+<BaseLayout title="Home">
+
+  <!-- Hero section -->
+  <section class="bg-scout-green text-white">
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 text-center">
+      <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+        Welcome to Cooroy Scouts
+      </h1>
+      <p class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto mb-8 leading-relaxed">
+        Adventure, friendship, and skills for young people aged 5–18 in Cooroy and the Noosa hinterland.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/join"
+          class="bg-scout-gold text-scout-green-dark font-display font-bold text-base px-8 py-4 rounded-full hover:bg-scout-gold-dark transition-colors inline-block"
+        >
+          Join Us Today
+        </a>
+        <a
+          href="/sections"
+          class="border-2 border-white text-white font-display font-bold text-base px-8 py-4 rounded-full hover:bg-white hover:text-scout-green transition-colors inline-block"
+        >
+          Explore Sections
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / intro section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-green mb-6 text-center">
+        What We Do
+      </h2>
+      <div class="prose prose-lg mx-auto text-gray-700 space-y-4 text-base leading-relaxed">
+        <p>
+          Cooroy Scout Group is part of Scouts Queensland, offering programs for young people from 5 to 18 years old. Every week, our members take part in activities that challenge them physically and mentally — from bushcraft and navigation to community service and leadership challenges.
+        </p>
+        <p>
+          We meet in Cooroy and run adventures throughout the Noosa hinterland — one of Queensland's most spectacular outdoor environments. Whether it's an overnight camp at Kin Kin, a day hike through the Cooroy State Forest, or a community clean-up in town, Scouts is hands-on, outdoor, and social.
+        </p>
+        <p>
+          The Scouts method builds skills that last a lifetime: resilience, teamwork, self-reliance, and a sense of responsibility to the community and the environment. We welcome all young people — no prior experience needed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section cards grid -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-green mb-4 text-center">
+        Find Your Section
+      </h2>
+      <p class="text-center text-gray-600 mb-10 max-w-xl mx-auto">
+        Each section has its own program tailored to age and development. Where does your young person fit?
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {sections.map(section => (
+          <div class="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white border border-gray-100">
+            <div class={`${section.color} ${section.textColor} px-5 py-6`}>
+              <div class="text-4xl mb-3">{section.icon}</div>
+              <h3 class="font-display font-black text-2xl">{section.name}</h3>
+              <p class="text-sm font-semibold opacity-80 mt-1">{section.age}</p>
+            </div>
+            <div class="px-5 py-5">
+              <p class="text-gray-600 text-sm leading-relaxed">{section.description}</p>
+              <a
+                href="/sections"
+                class="mt-4 inline-block text-scout-green font-bold text-sm hover:text-scout-green-dark transition-colors"
+              >
+                Learn more &rarr;
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action banner -->
+  <section class="py-16 bg-scout-gold">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-green-dark mb-4">
+        Ready to Join the Adventure?
+      </h2>
+      <p class="text-scout-green-dark/80 text-lg mb-8 max-w-xl mx-auto">
+        Registration is done through Scouts Queensland. Get in touch with us and we'll help your young person find the right section and get started.
+      </p>
+      <a
+        href="/join"
+        class="bg-scout-green text-white font-display font-bold text-base px-8 py-4 rounded-full hover:bg-scout-green-dark transition-colors inline-block"
+      >
+        How to Join
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
