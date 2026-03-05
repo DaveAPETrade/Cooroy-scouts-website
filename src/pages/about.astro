@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About Us"
+  description="Learn about Cooroy Scout Group — part of Scouts Queensland, serving the Noosa hinterland with outdoor adventure and life skills programs for young people aged 5–17."
+>
+
+  <!-- Hero -->
+  <section class="bg-scout-maroon text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+        About Cooroy Scouts
+      </h1>
+      <p class="text-lg md:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed">
+        Part of Scouts Queensland — building skills, friendships, and a love of the outdoors in the Noosa hinterland.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="bg-white py-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-navy mb-8">Our Story</h2>
+      <div class="prose prose-lg text-gray-700 space-y-5 leading-relaxed">
+        <p>
+          Cooroy Scout Group is a proud part of Scouts Queensland, serving young people and families in Cooroy and the surrounding Noosa hinterland. Our group has been part of this community for many years — fostering a spirit of adventure and a commitment to service that runs deep in Queensland Scouting.
+        </p>
+        <p>
+          Scouting at Cooroy offers outdoor adventure, life skills, and genuine teamwork. Members go camping in State Forests, navigate trails in the Sunshine Coast hinterland, participate in community service projects, and develop leadership skills that will serve them for a lifetime.
+        </p>
+        <p>
+          We welcome all young people aged 5–17, regardless of background or prior experience. Whether your child is naturally adventurous or simply looking for a place to belong and make friends, Cooroy Scouts has a section and a program for them. No experience is needed — just a willingness to give things a go.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Scouting? -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-navy mb-8">What is Scouting?</h2>
+      <div class="prose prose-lg text-gray-700 space-y-5 leading-relaxed">
+        <p>
+          Scouting is a worldwide movement that has been helping young people learn, grow, and contribute to their communities for over 100 years. The Scout method is simple but powerful: <strong>learning by doing</strong>. Members take on real challenges in small teams, guided by the principles of the Scout Promise and Scout Law.
+        </p>
+        <p>
+          At Cooroy, the program is outdoor-focused and hands-on. You won't find young people sitting at desks — they're building shelters, cooking over campfires, solving navigation challenges, and taking on service projects in the community.
+        </p>
+        <p>
+          Our group runs four sections, each tailored to a different age group and stage of development.
+          <a href="/sections" class="text-scout-maroon font-semibold hover:text-scout-maroon-dark transition-colors">
+            Explore the sections &rarr;
+          </a>
+        </p>
+        <p>
+          The Scout Promise and Law guide everything members do — a commitment to doing their best, helping others, and caring for the world around them. These aren't just words; they shape how young people at Cooroy approach every challenge and every adventure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="bg-white py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-navy mb-10 text-center">Our Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Adventure -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <div class="text-4xl mb-4">⛺</div>
+          <h3 class="font-display font-black text-xl text-scout-navy mb-3">Adventure</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            We learn by doing — camping, hiking, and exploring the outdoors. Every challenge is an opportunity to grow in confidence, capability, and courage.
+          </p>
+        </div>
+        <!-- Community -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="font-display font-black text-xl text-scout-navy mb-3">Community</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            We serve our local community and look after the environment. From Cooroy town clean-ups to conservation projects in the hinterland, giving back is central to everything we do.
+          </p>
+        </div>
+        <!-- Growth -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <div class="text-4xl mb-4">🌱</div>
+          <h3 class="font-display font-black text-xl text-scout-navy mb-3">Growth</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            We develop leadership, resilience, and skills for life. Scouts take on responsibility, learn to work in teams, and build the kind of character that shapes good citizens and capable adults.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-scout-gold py-16">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-display font-black text-3xl md:text-4xl text-scout-navy mb-4">
+        Ready to Join the Adventure?
+      </h2>
+      <p class="text-scout-navy/80 text-lg mb-8 max-w-xl mx-auto">
+        Get in touch and we'll help your young person find the right section and get started.
+      </p>
+      <a
+        href="/join"
+        class="bg-scout-navy text-white font-display font-bold text-base px-8 py-4 rounded-full hover:bg-scout-navy-dark transition-colors inline-block"
+      >
+        Join Cooroy Scouts
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
