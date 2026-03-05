@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-05T10:04:41.662Z"
+stopped_at: Completed 01-foundation/01-01-PLAN.md
+last_updated: "2026-03-05T10:31:55.242Z"
 last_activity: 2026-03-05 — Roadmap created, Phase 1 ready for planning
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_plans: 2
+  completed_plans: 1
   percent: 0
 ---
 
@@ -50,6 +50,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01-foundation P01 | 5 | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,9 @@ Recent decisions affecting current work:
 - [Pre-phase]: Web3Forms chosen for contact form (not Formspree — ignore any Formspree references in earlier notes)
 - [Pre-phase]: Tailwind v4 via `@tailwindcss/vite` — do NOT use deprecated `@astrojs/tailwind` integration
 - [Pre-phase]: Gallery images must live in `src/images/gallery/` not `public/` — Astro Image only optimises files in `src/`
+- [Phase 01-foundation]: @tailwindcss/vite chosen over deprecated @astrojs/tailwind — required for Tailwind v4 CSS-first approach
+- [Phase 01-foundation]: Text-only 'Cooroy Scouts' wordmark in nav — logo usage requires Scouts QLD permission (brandsupport@scoutsqld.com.au)
+- [Phase 01-foundation]: Brand colors #077840 (green) and #F0CB37 (gold) used as community-consensus placeholders — pending official Scouts QLD brand kit PDF verification
 
 ### Pending Todos
 
@@ -76,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-05T10:04:41.659Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-foundation/01-CONTEXT.md
+Last session: 2026-03-05T10:31:55.240Z
+Stopped at: Completed 01-foundation/01-01-PLAN.md
+Resume file: None
