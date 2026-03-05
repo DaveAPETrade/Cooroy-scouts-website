@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionProgression from '../../components/SectionProgression.astro';
+
+const section = {
+  name: 'Scouts',
+  ageRange: '11-14 years',
+  colorBg: 'bg-section-scouts',
+  colorBgDark: 'bg-section-scouts-dark',
+  colorText: 'text-white',
+  meetingDay: '[TBD — contact us for current times]',
+  meetingTime: '[TBD]',
+  meetingLocation: 'Cooroy Scout Den, Cooroy',
+  description: 'The Scout section is the heart of Scouting. Scouts take on bigger challenges — multi-day hikes, overnight camps, navigation expeditions, and community service projects. The program builds leadership, resilience, and self-reliance.',
+  activities: [
+    'Bushwalking and overnight hiking in the Noosa hinterland',
+    'Camping — from basic bivouacs to established campsites',
+    'Navigation and orienteering challenges',
+    'Community service projects and environmental conservation',
+  ],
+  typicalNight: 'A typical Scout night starts with a flag break and a patrol activity. Patrols (small teams of 6-8) might work on camp preparation, practise navigation with map and compass, or plan their next weekend expedition. We often run wide games in the bush around the den. Scouts runs for about 2 hours and emphasises youth-led decision making.',
+};
+---
+
+<BaseLayout
+  title="Scouts — Ages 11-14"
+  description="Scouts at Cooroy Scout Group — for young people aged 11-14. Multi-day hikes, overnight camps, navigation, and leadership in the beautiful Noosa hinterland."
+>
+
+  <!-- Hero -->
+  <section class={`${section.colorBg} ${section.colorText} py-16 md:py-20`}>
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="font-display font-black text-4xl md:text-5xl mb-3">{section.name}</h1>
+      <p class="text-lg md:text-xl font-semibold opacity-90 mb-2">Ages {section.ageRange}</p>
+      <p class="text-base md:text-lg opacity-80">Bigger challenges, real adventures, and youth-led leadership in the Noosa hinterland.</p>
+    </div>
+  </section>
+
+  <!-- Meeting Details -->
+  <section class="py-10 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-display font-black text-2xl text-scout-navy mb-6">Meeting Details</h2>
+      <div class="bg-white shadow-sm rounded-xl p-6 border border-gray-100 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-1">Day</p>
+          <p class="font-semibold text-gray-800">{section.meetingDay}</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-1">Time</p>
+          <p class="font-semibold text-gray-800">{section.meetingTime}</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-1">Location</p>
+          <p class="font-semibold text-gray-800">{section.meetingLocation}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-display font-black text-2xl text-scout-navy mb-4">What We Do</h2>
+      <p class="text-gray-700 mb-6">{section.description}</p>
+      <ul class="list-disc list-inside space-y-2">
+        {section.activities.map((activity) => (
+          <li class="text-gray-700">{activity}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- A Typical Night -->
+  <section class="py-10 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-display font-black text-2xl text-scout-navy mb-4">A Typical Night</h2>
+      <div class="bg-gray-50 rounded-xl p-6">
+        <p class="text-gray-700">{section.typicalNight}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Progression -->
+  <SectionProgression current="scouts" />
+
+  <!-- CTA -->
+  <section class="bg-scout-maroon text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display font-black text-2xl md:text-3xl mb-4">Ready to join {section.name}?</h2>
+      <p class="text-base opacity-90 mb-6">Get in touch and we'll help you get started on the Scouting journey.</p>
+      <a
+        href="/join"
+        class="inline-block bg-scout-gold text-scout-navy font-display font-bold px-8 py-3 rounded-lg hover:bg-scout-gold-dark transition-colors"
+      >
+        Join Now
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
