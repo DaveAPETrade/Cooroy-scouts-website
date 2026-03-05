@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionProgression from '../../components/SectionProgression.astro';
+
+const sections = [
+  {
+    id: 'joeys',
+    name: 'Joey Scouts',
+    ageRange: '5-7 years',
+    colorBg: 'bg-section-joeys',
+    colorText: 'text-white',
+    description: 'The beginning of the Scouting adventure — fun, games, and discovering the outdoors in a safe and welcoming environment.',
+    href: '/sections/joeys',
+  },
+  {
+    id: 'cubs',
+    name: 'Cub Scouts',
+    ageRange: '8-10 years',
+    colorBg: 'bg-section-cubs',
+    colorText: 'text-amber-900',
+    description: 'More challenges, badge work, and team activities — Cubs build practical skills and earn achievements together.',
+    href: '/sections/cubs',
+  },
+  {
+    id: 'scouts',
+    name: 'Scouts',
+    ageRange: '11-14 years',
+    colorBg: 'bg-section-scouts',
+    colorText: 'text-white',
+    description: 'The heart of Scouting — multi-day hikes, overnight camps, and leadership in the beautiful Noosa hinterland.',
+    href: '/sections/scouts',
+  },
+  {
+    id: 'venturers',
+    name: 'Venturer Scouts',
+    ageRange: '15-17 years',
+    colorBg: 'bg-section-venturers',
+    colorText: 'text-white',
+    description: 'Youth-led expeditions, personal challenges, and real-world skills — Venturers run their own program.',
+    href: '/sections/venturers',
+  },
+];
+---
+
+<BaseLayout title="Our Sections" description="Cooroy Scout Group sections — Joey Scouts (5-7), Cub Scouts (8-10), Scouts (11-14), and Venturer Scouts (15-17). Find the right section for your child.">
+
+  <!-- Hero -->
+  <section class="bg-scout-maroon text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="font-display font-black text-4xl md:text-5xl mb-4">Our Sections</h1>
+      <p class="text-lg md:text-xl opacity-90">
+        From Joeys to Venturers — there's a place for every young person in Scouting
+      </p>
+    </div>
+  </section>
+
+  <!-- Age Progression Pathway -->
+  <SectionProgression />
+
+  <!-- Section Cards -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-display font-black text-2xl md:text-3xl text-scout-navy mb-8 text-center">
+        Find the Right Section
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {sections.map((section) => (
+          <div class="rounded-xl overflow-hidden shadow-sm border border-gray-100">
+            <!-- Section color header strip -->
+            <div class={`${section.colorBg} ${section.colorText} px-6 py-4`}>
+              <h3 class="font-display font-black text-xl">{section.name}</h3>
+              <p class="text-sm font-semibold opacity-90">{section.ageRange}</p>
+            </div>
+            <!-- Card body -->
+            <div class="bg-white p-6">
+              <p class="text-gray-700 mb-4">{section.description}</p>
+              <a
+                href={section.href}
+                class="text-scout-maroon hover:text-scout-maroon-dark font-semibold font-display transition-colors"
+              >
+                Learn more &rarr;
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-gray-700 text-lg">
+        Not sure which section?{' '}
+        <a href="/join" class="text-scout-maroon hover:text-scout-maroon-dark font-semibold transition-colors">
+          Contact us and we'll help you find the right fit &rarr;
+        </a>
+      </p>
+    </div>
+  </section>
+
+</BaseLayout>

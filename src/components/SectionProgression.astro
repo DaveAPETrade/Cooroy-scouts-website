@@ -1,0 +1,77 @@
+---
+interface Props {
+  current?: 'joeys' | 'cubs' | 'scouts' | 'venturers';
+}
+
+const { current } = Astro.props;
+
+const steps = [
+  {
+    id: 'joeys',
+    label: 'Joeys',
+    age: '5-7 yrs',
+    href: '/sections/joeys',
+    color: 'bg-section-joeys',
+    text: 'text-white',
+  },
+  {
+    id: 'cubs',
+    label: 'Cubs',
+    age: '8-10 yrs',
+    href: '/sections/cubs',
+    color: 'bg-section-cubs',
+    text: 'text-amber-900',
+  },
+  {
+    id: 'scouts',
+    label: 'Scouts',
+    age: '11-14 yrs',
+    href: '/sections/scouts',
+    color: 'bg-section-scouts',
+    text: 'text-white',
+  },
+  {
+    id: 'venturers',
+    label: 'Venturers',
+    age: '15-17 yrs',
+    href: '/sections/venturers',
+    color: 'bg-section-venturers',
+    text: 'text-white',
+  },
+];
+---
+
+<div class="py-8 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <p class="font-display font-black text-xl text-scout-navy mb-4">The Scouting Journey</p>
+    <nav aria-label="Age progression pathway">
+      <ol class="flex flex-col sm:flex-row items-center gap-2 sm:gap-0">
+        {steps.map((step, index) => (
+          <>
+            <li class="flex-1 w-full sm:w-auto">
+              <a
+                href={step.href}
+                class={[
+                  step.color,
+                  step.text,
+                  'block rounded-xl px-4 py-3 text-center font-display font-bold transition-opacity',
+                  current === step.id
+                    ? 'opacity-100 ring-2 ring-offset-2 ring-scout-navy'
+                    : 'opacity-70 hover:opacity-100',
+                ].join(' ')}
+              >
+                <span class="block text-sm font-black">{step.label}</span>
+                <span class="block text-xs font-semibold opacity-90">{step.age}</span>
+              </a>
+            </li>
+            {index < steps.length - 1 && (
+              <li aria-hidden="true" class="hidden sm:block px-2 text-scout-navy font-bold text-lg select-none">
+                →
+              </li>
+            )}
+          </>
+        ))}
+      </ol>
+    </nav>
+  </div>
+</div>
