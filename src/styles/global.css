@@ -1,22 +1,44 @@
 /* 1. Google Fonts — must be FIRST, before @import "tailwindcss" */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Nunito:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap");
 
 /* 2. Tailwind base */
 @import "tailwindcss";
 
-/* 3. Brand design tokens — Scouts QLD color palette and typography
-   Colors: Community-consensus hex values consistent with Scouts Australia
-   brand book (#077840 green, #F0CB37 gold). Pending official Scouts QLD
-   brand kit PDF confirmation — treat as HIGH-confidence starting points.
+/* 3. Brand design tokens — Official Scouts QLD branding
+   Colors sourced from Scouts Australia Brand Book and Scouts QLD Brand Book.
+   Primary: QLD Maroon #681d34 (PMS 7428c)
+   Secondary: Australian Navy Blue #28265c (PMS 289c)
+   Font: Nunito Sans (Scouts Australia Brand Book)
 */
 @theme {
-  /* Brand Colors */
-  --color-scout-green:      #077840;  /* Scouts Australia primary green */
-  --color-scout-green-dark: #055c30;  /* Hover / darker shade */
-  --color-scout-gold:       #F0CB37;  /* Scouts Australia gold */
-  --color-scout-gold-dark:  #d4a800;  /* Hover / darker gold */
+  /* === PRIMARY BRAND COLORS (Scouts QLD Brand Book) === */
+  --color-scout-maroon:       #681d34;  /* QLD Maroon — Primary Colour (PMS 7428c) */
+  --color-scout-maroon-dark:  #571a21;  /* QLD Burgundy — hover state (PMS 7645c) */
+  --color-scout-maroon-light: #a43c51;  /* QLD Light Maroon (PMS 7435c) */
+  --color-scout-navy:         #28265c;  /* Australian Navy Blue (PMS 289c) */
+  --color-scout-navy-dark:    #1c4270;  /* Scouts Dark Blue (PMS 2746c) */
 
-  /* Typography */
-  --font-display: "Montserrat", "Arial Black", sans-serif;  /* Headings — bold, outdoorsy */
-  --font-body:    "Nunito", "Arial", sans-serif;             /* Body — friendly, readable */
+  /* === ACCENT / CTA COLOR === */
+  --color-scout-gold:       #F0CB37;  /* CTA buttons, highlights */
+  --color-scout-gold-dark:  #d4a800;  /* Hover state */
+
+  /* === SECTION COLORS (Scouts Australia Brand Book pg.24) === */
+  --color-section-joeys:         #ba6228;  /* Scouts Joeys Brown (PMS 471c) */
+  --color-section-joeys-dark:    #973d20;
+  --color-section-cubs:          #ffc62e;  /* Scouts Cubs Yellow (PMS 123c) */
+  --color-section-cubs-dark:     #946a28;
+  --color-section-scouts:        #0cae4b;  /* Scouts Scouts Green (PMS 354c) */
+  --color-section-scouts-dark:   #066d3c;
+  --color-section-venturers:     #a22237;  /* Scouts Venturer (PMS 201c) */
+  --color-section-venturers-dark:#701d28;
+
+  /* === ADDITIONAL BRAND COLORS === */
+  --color-scout-teal:        #008f88;  /* Scouts Teal (PMS 7714c) */
+  --color-scout-dark-green:  #00674b;  /* Scouts Dark Green (PMS 342c) */
+  --color-scout-ruby:        #8a1f2c;  /* QLD Ruby (PMS 209c) */
+  --color-scout-salmon:      #a66952;  /* QLD Salmon */
+
+  /* === TYPOGRAPHY (Scouts Australia Brand Book) === */
+  --font-display: "Nunito Sans", "Arial", sans-serif;
+  --font-body:    "Nunito Sans", "Arial", sans-serif;
 }
